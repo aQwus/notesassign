@@ -15,15 +15,15 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
-from notesite.views import home_view,login,logout,invalid_login,auth_view,register
+from notesite.views import home_view,auth_login,logout,invalid_login,auth_view,register
 
 
 urlpatterns = [
     url(r'^admin/',admin.site.urls),
     url(r'^$', home_view, name='home'),
-    url(r'^login/$',login,name='login'),
+    url(r'^reg/$',register,name='register'),
+    url(r'^login/$',auth_login,name='login'),
     url(r'^logout/$',logout,name='logout'),
     url(r'^invalid_login/$',invalid_login,name='invalid_login'),
-    url(r'^reg/$',register,name='register'),
     url(r'^notes/', include('notes.urls')),
 ]

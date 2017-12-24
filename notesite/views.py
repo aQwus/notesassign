@@ -3,12 +3,13 @@ from django.http import HttpResponseRedirect
 from django.contrib import auth
 from django.template.context_processors import csrf
 from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth import login, authenticate
 
 
 def home_view(request):
     return render(request, 'notes/home.html')
 
-def login(request):
+def auth_login(request):
     c={}
     c.update(csrf(request))
     return render_to_response('notes/login.html',c)
@@ -20,7 +21,7 @@ def auth_view(request):
 
     if user is not None:
         auth.login(request,user)
-        return HttpResponseRedirect('/notes/loggedin/')
+        return HttpResponseRedirect('/notes/')
     else:
         return HttpResponseRedirect('/invalid_login')
 
@@ -39,10 +40,11 @@ def register(request):
         form = UserCreationForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('/notes/loggedin/')
+            username = form.cleaned_data.get('username')
+            raw_password = form.cleaned_data.get('password1')
+            user = authenticate(username=username, password=raw_password)
+            login(request, user)
+            return redirect('/notes/')
     else:
-            form = UserCreationForm()
-
-            args = {'form':form}
-            return render_to_response(request, 'notes/reg_form.html',args)
-
+        form = UserCreationForm()
+    return render(request, 'notes/reg_form.html', {'form': form})

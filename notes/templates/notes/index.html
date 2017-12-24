@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{% block title %}Notes - Register{% endblock title %}</title>
+    <title>{% block title %}Notes - Notes{% endblock title %}</title>
     <style>
     body{
      background-color:gold;
@@ -47,12 +47,17 @@ color:black;
      <a id='demo' href='/'>HOME</a>
  </div>
 <div class="stage">
-    <h2>REGISTER</h2>
-    <form method="post">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit">Sign Up</button>
-    </form>
+    {% if notes %}
+	{% for note in notes %}
+	 <h3>{{note.label}}</h3>
+	 {{note.body|linebreaks}}
+	{% endfor %}
+    {% else %}
+	<div align='center'>
+		<h3>No Notes Yet!</h3>
+        <p>Click <a href="/logout/">here</a> to logout</p>
+	</div>
+    {% endif %}
 </div>
 </body>
 </html>
