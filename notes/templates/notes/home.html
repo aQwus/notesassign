@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Notes - Home{% endblock title %}</title>
+    <style>
+    body{
+     background-color:gold;
+     }
+.header{
+ font-size:500%;
+ background-color:#7FFF00;
+ color:white;
+ text-shadow:5px 5px 5px grey;
+ padding:18px;
+ font-family:papyrus, arial;
+ padding-left:15%;
+}
+.menubar{
+ background-color:lightskyblue;
+}
+#demo{
+ float:right;
+ background-color:lightskyblue;
+}
+#demo li{
+ display:inline-block;
+ padding:15px;
+ font-size:120%;
+}
+#demo li:hover{
+ text-shadow:2px 2px 5px;
+ background-color:lightgreen;
+ }
+a{
+text-decoration:none;
+color:black;
+}
+.class{
+ align:center;
+}
+</style>
+</head>
+<body>
+ <div class='header'>
+  NOTES
+ </div>
+ <div class='menubar'>
+  <ul id='demo'>
+   <li><a href='/'>HOME</a></li>
+   <li><a href='/login/'>LOGIN</a></li>
+   <li><a href='reg/'>REGISTER</a></li>
+  </ul>
+ </div>
+<div class="stage">
+    {% block body %}
+    {% endblock body %}
+</div>
+</body>
+</html>
