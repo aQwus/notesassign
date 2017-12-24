@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{% block title %}Notes - Notes{% endblock title %}</title>
+    <title>{% block title %}Notes - CreateNotes{% endblock title %}</title>
     <style>
     body{
      background-color:gold;
@@ -47,20 +47,11 @@ color:black;
      <a id='demo' href='/'>HOME</a>
  </div>
 <div class="stage">
-    {% if notes %}
-	{% for note in notes %}
-	 <h3>{{note.label}}</h3>
-	 {{note.body|linebreaks}}
-	{% endfor %}
-    <p>Click <a href="/notes/addnote/">here</a> to make notes</p>
-    <p>Click <a href="/logout/">here</a> to logout</p>
-    {% else %}
-	<div align='center'>
-		<h3>No Notes Yet!</h3>
-        <p>Click <a href="/notes/addnote/">here</a> to make notes</p>
-        <p>Click <a href="/logout/">here</a> to logout</p>
-	</div>
-    {% endif %}
+    <h2>Make your Notes</h2>
+    <form action="" method="post">{% csrf_token %}
+	{{form.as_p}}
+	<input type='submit' value='Create New Note!'/>
+	</form>
 </div>
 </body>
 </html>
