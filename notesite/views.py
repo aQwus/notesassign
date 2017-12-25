@@ -1,4 +1,4 @@
-from django.shortcuts import render_to_response, render, redirect
+from django.shortcuts import render_to_response, render, redirect, reverse
 from django.http import HttpResponseRedirect
 from django.contrib import auth
 from django.template.context_processors import csrf
@@ -21,7 +21,7 @@ def auth_view(request):
 
     if user is not None:
         auth.login(request,user)
-        return HttpResponseRedirect('/notes/')
+        return HttpResponseRedirect(reverse('notes:index'))
     else:
         return HttpResponseRedirect('/invalid_login')
 
