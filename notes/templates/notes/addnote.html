@@ -1,52 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>{% block title %}Notes - CreateNotes{% endblock title %}</title>
-    <style>
-    body{
-     background-color:gold;
-     }
-.header{
- font-size:500%;
- background-color:#7FFF00;
- color:white;
- text-shadow:5px 5px 5px grey;
- padding:18px;
- font-family:papyrus, arial;
- padding-left:15%;
-}
-.menubar{
- background-color:lightskyblue;
-}
-#demo{
- float:right;
- background-color:lightskyblue;
-}
-#demo li{
- display:inline-block;
- padding:15px;
- font-size:120%;
-}
-#demo li:hover{
- text-shadow:2px 2px 5px;
- background-color:lightgreen;
- }
-a{
-text-decoration:none;
-color:black;
-}
-.class{
- align:center;
-}
-</style>
-</head>
-<body>
- <div class='header'>
-  NOTES
-     <a id='demo' href='/'>HOME</a>
- </div>
-<div class="stage">
+{% extends 'notes/base.html'%}
+{% block content%}
     <h2>Make your Notes</h2>
     <form action="" method="post">{% csrf_token %}
 	{{form.as_p}}
@@ -56,6 +9,4 @@ color:black;
     <input type="hidden" name="control" value="delete" />
     <input type="submit" value="Delete"/>
     </form>
-</div>
-</body>
-</html>
+{% endblock %}
