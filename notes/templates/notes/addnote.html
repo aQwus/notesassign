@@ -52,6 +52,10 @@ color:black;
 	{{form.as_p}}
 	<input type='submit' value='Create New Note!'/>
 	</form>
+    <form action="" method="POST">{% csrf_token %}
+    <input type="hidden" name="control" value="delete" />
+    <input type="submit" value="Delete"/>
+    </form>
 </div>
 </body>
 </html>

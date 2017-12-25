@@ -51,6 +51,7 @@ color:black;
 	{% for note in notes %}
 	 <h3>{{note.label}}</h3>
 	 {{note.body|linebreaks}}
+    <p>Click <a href="/notes/addnote/?id={{note.id}}">here</a> to edit or delete</p>
 	{% endfor %}
     <p>Click <a href="/notes/addnote/">here</a> to make notes</p>
     <p>Click <a href="/logout/">here</a> to logout</p>

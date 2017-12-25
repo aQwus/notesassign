@@ -1,7 +1,7 @@
-from django.shortcuts import render
-from django.shortcuts import get_object_or_404
+from django.shortcuts import render,get_object_or_404
 from django.urls import reverse
 from django.http import HttpResponseRedirect
+from django.contrib import messages
 from notes.models import Note
 from notes.forms import NoteForm
 
@@ -12,8 +12,19 @@ def index_view(request):
 
 
 def add_note(request):
+    id = request.GET.get('id', None)
+    if id is not None:
+        note = get_object_or_404(Note, id=id)
+    else:
+        note = None
+
     if request.method == 'POST':
-        form = NoteForm(request.POST)
+        if request.POST.get('control') == 'delete':
+            note.delete()
+            messages.add_message(request, messages.INFO, 'Note Deleted!')
+            return HttpResponseRedirect(reverse('notes:index'))
+
+        form = NoteForm(request.POST,instance=note)
         if form.is_valid():
             obj = form.save(commit=False)
             obj.owner = request.user
@@ -21,6 +32,6 @@ def add_note(request):
             return HttpResponseRedirect(reverse('notes:index'))
 
     else:
-        form = NoteForm()
+        form = NoteForm(instance=note)
 
     return render(request, 'notes/addnote.html', {'form': form})
