@@ -8,6 +8,7 @@ from notes.forms import NoteForm
 
 def index_view(request):
     notes = Note.objects.all().filter(owner=request.user)
+    notes = notes.order_by('-timestamp')
     return render(request, 'notes/index.html', {'notes' : notes})
 
 

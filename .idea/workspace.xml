@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f6d99155-ca1a-4bb0-84a2-6ae3bf0076a7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/notes/templates/notes/addnote.html" afterPath="$PROJECT_DIR$/notes/templates/notes/addnote.html" />
-      <change beforePath="$PROJECT_DIR$/notes/templates/notes/index.html" afterPath="$PROJECT_DIR$/notes/templates/notes/index.html" />
       <change beforePath="$PROJECT_DIR$/notes/views.py" afterPath="$PROJECT_DIR$/notes/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -49,12 +47,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/notes/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-84">
-              <caret line="2" column="44" lean-forward="true" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
-              <folding />
+            <state relative-caret-position="84">
+              <caret line="10" column="40" lean-forward="false" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+              <folding>
+                <element signature="e#0#53#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -81,7 +81,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/notes/templates/notes/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="419">
@@ -156,8 +156,8 @@
         <option value="$PROJECT_DIR$/notes/templates/notes/login.html" />
         <option value="$PROJECT_DIR$/notes/models.py" />
         <option value="$PROJECT_DIR$/notes/templates/notes/addnote.html" />
-        <option value="$PROJECT_DIR$/notes/views.py" />
         <option value="$PROJECT_DIR$/notes/templates/notes/index.html" />
+        <option value="$PROJECT_DIR$/notes/views.py" />
       </list>
     </option>
   </component>
@@ -449,19 +449,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/notes/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-84">
-          <caret line="2" column="44" lean-forward="true" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/notes/templates/notes/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="419">
           <caret line="53" column="80" lean-forward="false" selection-start-line="53" selection-start-column="80" selection-end-line="53" selection-end-column="80" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notes/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="10" column="40" lean-forward="false" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#53#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
