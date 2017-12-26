@@ -1,11 +1,22 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>{% block title %}Notes - Home{% endblock title %}</title>
     <style>
+    body,html{
+    min-height: 100%;
+    }
     body{
-     background-color:gold;
+     background-image: url("{% static 'images/study1.jpg' %}");
+     background-repeat: no-repeat;
+     -ms-background-size: cover;
+     -o-background-size: cover;
+     -moz-background-size: cover;
+     -webkit-background-size: cover;
+     background-size:cover;
+     background-position:fixed;
      }
 .header{
  font-size:500%;
@@ -15,12 +26,13 @@
  padding:18px;
  font-family:papyrus, arial;
  padding-left:15%;
+ opacity:0.85;
 }
 .menubar{
  background-color:lightskyblue;
+ opacity: 0.85;
 }
 #demo{
- float:right;
  background-color:lightskyblue;
 }
 #demo li{
@@ -34,10 +46,12 @@
  }
 a{
 text-decoration:none;
-color:black;
+color:tomato;
 }
-.class{
- align:center;
+.footer{
+ color:white;
+ bottom:0px;
+ margin-bottom:0px;
 }
 </style>
 </head>
@@ -45,7 +59,7 @@ color:black;
  <div class='header'>
   NOTES
  </div>
- <div class='menubar'>
+ <div class='menubar' align="center">
   <ul id='demo'>
    <li><a href='/'>HOME</a></li>
    <li><a href='/login/'>LOGIN</a></li>
@@ -56,5 +70,6 @@ color:black;
     {% block body %}
     {% endblock body %}
 </div>
+<p class="footer" >images have been taken from https://google.co.in</p>
 </body>
 </html>

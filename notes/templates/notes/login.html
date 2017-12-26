@@ -1,5 +1,6 @@
 {% extends 'notes/base.html' %}
 {% block content %}
+<div class="stage1" align="center">
     {% if form.errors %}
      <p>Sorry, that's not a valid username or password</p>
     {% endif %}
@@ -7,9 +8,11 @@
     <form action="/notes/auth/" method="post">{% csrf_token %}
     <label for="username">User name:</label>
     <input type="text" name="username" value="" id="username">
+        <br/>
     <label for="password">Password</label>
     <input type="password" name="password" value="" id="password">
-
+        <br/>
     <input type="submit" value="login" />
     </form>
+</div>
 {% endblock %}

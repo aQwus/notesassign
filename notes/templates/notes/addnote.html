@@ -1,12 +1,14 @@
 {% extends 'notes/base.html'%}
 {% block content%}
+<div class="stage1" align="center">
     <h2>Make your Notes</h2>
     <form action="" method="post">{% csrf_token %}
 	{{form.as_p}}
-	<input type='submit' value='Create New Note!'/>
+	<input type='submit' value='SAVE'/>
 	</form>
     <form action="" method="POST">{% csrf_token %}
     <input type="hidden" name="control" value="delete" />
     <input type="submit" value="Delete"/>
     </form>
+</div>
 {% endblock %}

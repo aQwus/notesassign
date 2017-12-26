@@ -1,3 +1,4 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +6,14 @@
     <title>{% block title %}Notes - Notes{% endblock title %}</title>
     <style>
     body{
-     background-color:gold;
+     background-image: url("{% static 'images/study1.jpg' %}");
+     background-repeat: no-repeat;
+     -ms-background-size: cover;
+     -o-background-size: cover;
+     -moz-background-size: cover;
+     -webkit-background-size: cover;
+     background-size:cover;
+     background-position:fixed;
      }
 .header{
  font-size:500%;
@@ -15,9 +23,7 @@
  padding:18px;
  font-family:papyrus, arial;
  padding-left:15%;
-}
-.menubar{
- background-color:lightskyblue;
+ opacity:0.85;
 }
 #demo{
  float:right;
@@ -34,10 +40,57 @@
  }
 a{
 text-decoration:none;
-color:black;
+color:tomato;
 }
-.class{
+.stage1{
+ margin:auto;
+ margin-top:5%;
+ background-color:gold;
+ border:5px double tomato;
+ border-radius:8px;
+ width:40%;
+ height:auto;
+ opacity:0.80;
+ padding:1%;
+}
+.stage2{
  align:center;
+ background-image: url("{% static 'images/chat_bg.jpg' %}");
+ background-repeat: no-repeat;
+ -ms-background-size: cover;
+ -o-background-size: cover;
+ -moz-background-size: cover;
+ -webkit-background-size: cover;
+ background-size:cover;
+ background-position:fixed;
+ margin:auto;
+ margin-top:3%;
+ padding:4%;
+ border:5px double tomato;
+ border-radius:8px;
+ height:850px;
+ width:45%;
+ opacity:0.75;
+ overflow-y:scroll;
+}
+.bottom{
+ margin-bottom:0%;
+ font-size:125%;
+ background-color:lightskyblue;
+ opacity:0.85;
+}
+.ontop{
+ position:relative;
+ margin-top:3%;
+ padding:4%;
+ height:850px;
+ width:45%;
+ overflow-y:scroll;
+}
+.mudda{
+ font-size:115%;
+ background-color:khaki;
+ opacity:0.80;
 }
 </style>
 </head>
@@ -46,9 +99,9 @@ color:black;
   NOTES
      <a id='demo' href='/'>HOME</a>
  </div>
-<div class="stage">
+
     {% block content %}
     {% endblock %}
-</div>
+
 </body>
 </html>

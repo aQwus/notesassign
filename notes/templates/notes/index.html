@@ -1,18 +1,26 @@
 {% extends 'notes/base.html'%}
 {% block content %}
+<div class="stage2" align="center">
+    <div class="mudda" align="center">
     {% if notes %}
 	{% for note in notes %}
 	 <h3>{{note.label}}</h3>
 	 {{note.body|linebreaks}}
-    <p>Click <a href="/notes/addnote/?id={{note.id}}">here</a> to edit or delete</p>
+    <p>Click <a href="/notes/addnote/?id={{note.id}}">HERE</a> to edit or delete</p>
 	{% endfor %}
-    <p>Click <a href="/notes/addnote/">here</a> to make notes</p>
-    <p>Click <a href="/logout/">here</a> to logout</p>
+    </div>
+    <div class="bottom">
+        <p>Click <a href="/notes/addnote/">HERE</a> to make notes</p>
+        <p>Click <a href="/logout/">HERE</a> to logout</p>
+    </div>
     {% else %}
-	<div align='center'>
+	<div class="mudda" align='center'>
 		<h3>No Notes Yet!</h3>
-        <p>Click <a href="/notes/addnote/">here</a> to make notes</p>
-        <p>Click <a href="/logout/">here</a> to logout</p>
+        <div class="bottom">
+        <p>Click <a href="/notes/addnote/">HERE</a> to make notes</p>
+        <p>Click <a href="/logout/">HERE</a> to logout</p>
+    </div>
 	</div>
+</div>
     {% endif %}
 {% endblock %}
