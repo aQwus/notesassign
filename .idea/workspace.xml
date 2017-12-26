@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f6d99155-ca1a-4bb0-84a2-6ae3bf0076a7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/notes/templates/notes/addnote.html" afterPath="$PROJECT_DIR$/notes/templates/notes/addnote.html" />
       <change beforePath="$PROJECT_DIR$/notes/templates/notes/base.html" afterPath="$PROJECT_DIR$/notes/templates/notes/base.html" />
-      <change beforePath="$PROJECT_DIR$/notes/templates/notes/home.html" afterPath="$PROJECT_DIR$/notes/templates/notes/home.html" />
-      <change beforePath="$PROJECT_DIR$/notes/templates/notes/index.html" afterPath="$PROJECT_DIR$/notes/templates/notes/index.html" />
-      <change beforePath="$PROJECT_DIR$/notes/templates/notes/invalid_login.html" afterPath="$PROJECT_DIR$/notes/templates/notes/invalid_login.html" />
-      <change beforePath="$PROJECT_DIR$/notes/templates/notes/loggedin.html" afterPath="$PROJECT_DIR$/notes/templates/notes/loggedin.html" />
-      <change beforePath="$PROJECT_DIR$/notes/templates/notes/login.html" afterPath="$PROJECT_DIR$/notes/templates/notes/login.html" />
-      <change beforePath="$PROJECT_DIR$/notes/templates/notes/logout.html" afterPath="$PROJECT_DIR$/notes/templates/notes/logout.html" />
-      <change beforePath="$PROJECT_DIR$/notes/templates/notes/reg_form.html" afterPath="$PROJECT_DIR$/notes/templates/notes/reg_form.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -51,11 +43,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/notes/templates/notes/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="92" column="13" lean-forward="false" selection-start-line="92" selection-start-column="13" selection-end-line="92" selection-end-column="13" />
+            <state relative-caret-position="189">
+              <caret line="9" column="5" lean-forward="false" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -101,11 +93,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/notes/templates/notes/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="53" column="18" lean-forward="false" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="18" />
+            <state relative-caret-position="189">
+              <caret line="9" column="5" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="9" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -154,12 +146,12 @@
         <option value="$PROJECT_DIR$/notes/templates/notes/reg_form.html" />
         <option value="$PROJECT_DIR$/notes/templates/notes/addnote.html" />
         <option value="$PROJECT_DIR$/notes/templates/notes/index.html" />
-        <option value="$PROJECT_DIR$/notes/templates/notes/base.html" />
         <option value="$PROJECT_DIR$/notes/templates/notes/home.html" />
+        <option value="$PROJECT_DIR$/notes/templates/notes/base.html" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="496" />
     <option name="y" value="27" />
     <option name="width" value="1231" />
@@ -276,7 +268,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="496" y="27" width="1231" height="939" extended-state="0" />
+    <frame x="496" y="27" width="1231" height="939" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2837838" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
@@ -467,18 +459,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/notes/templates/notes/base.html">
+    <entry file="file://$PROJECT_DIR$/notes/templates/notes/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="92" column="13" lean-forward="false" selection-start-line="92" selection-start-column="13" selection-end-line="92" selection-end-column="13" />
+        <state relative-caret-position="189">
+          <caret line="9" column="5" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="9" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/notes/templates/notes/home.html">
+    <entry file="file://$PROJECT_DIR$/notes/templates/notes/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="53" column="18" lean-forward="false" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="18" />
+        <state relative-caret-position="189">
+          <caret line="9" column="5" lean-forward="false" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
           <folding />
         </state>
       </provider>
