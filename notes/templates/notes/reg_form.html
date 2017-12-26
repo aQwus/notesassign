@@ -1,6 +1,7 @@
 {% extends 'notes/base.html' %}
+{% block title %}Notes - register{% endblock title %}
 {% block content %}
-<div class="stage1" align="center">
+<div class="stage1">
     <h2>REGISTER</h2>
     <form method="post">
         {% csrf_token %}

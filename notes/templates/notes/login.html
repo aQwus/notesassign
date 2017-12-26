@@ -1,6 +1,7 @@
 {% extends 'notes/base.html' %}
+{% block title %}Notes - Login{% endblock title %}
 {% block content %}
-<div class="stage1" align="center">
+<div class="stage1">
     {% if form.errors %}
      <p>Sorry, that's not a valid username or password</p>
     {% endif %}
@@ -9,10 +10,14 @@
     <label for="username">User name:</label>
     <input type="text" name="username" value="" id="username">
         <br/>
-    <label for="password">Password</label>
+    <label for="password" style="padding:.75%;">Password:</label>
     <input type="password" name="password" value="" id="password">
         <br/>
-    <input type="submit" value="login" />
+    <input style="margin-left:20%" type="submit" value="login" />
     </form>
+    <div align="center">
+    <p>Don't have an account!!</p>
+    <p>Click <a href='/reg/'>HERE</a> to register</p>
+    </div>
 </div>
 {% endblock %}
