@@ -20,57 +20,94 @@
      }
 .header{
  font-size:500%;
- background-color:#7FFF00;
+ background-color:#B22222;
  color:white;
  text-shadow:5px 5px 5px grey;
- padding:18px;
  font-family:'papyrus';
  src: url("{% static 'fonts/papyrus.ttf' %}");
- padding-left:15%;
  opacity:0.85;
 }
 .menubar{
- background-color:lightskyblue;
  opacity: 0.85;
+ width:60%;
+ float:right;
+ padding:2%;
+ padding-top:3%;
 }
 #demo{
- background-color:lightskyblue;
+ background-color:OrangeRed;
+ color:white;
 }
 #demo li{
  display:inline-block;
- padding:15px;
- font-size:120%;
+ padding:20px;
+ font-size:140%;
 }
 #demo li:hover{
- text-shadow:2px 2px 5px;
- background-color:lightgreen;
+ text-shadow:2px 4px 5px;
+ background-color:black;
  }
 a{
 text-decoration:none;
-color:tomato;
+color:#48D1CC;
 }
 .footer{
  color:white;
  bottom:0px;
  margin-bottom:0px;
+ float:right;
+}
+.stage{
+ background-color:grey;
+ opacity: 0.85;
+}
+.gif{
+ width:30%;
+ padding:0.5%;
+}
+.info{
+ background-color:#FF69B4;
+ color:white;
+ font-family:papyrus;
+}
+.headinfo{
+ padding-left:10%;
+ float:left;
+ padding-top:2%;
+}
+.img2{
+ width:20%;
+ padding-left:38%;
 }
 </style>
 </head>
 <body>
  <div class='header'>
-  NOTES
+     <div class="headinfo">
+         NOTES
+     </div>
+     <div class="img2">
+         <img src="{% static 'images/notebook.png' %}" alt="ipad_as_book" width="50%">
+     </div>
  </div>
- <div class='menubar' align="center">
+ <br/>
+<div class="stage">
+    <div class='menubar' align="center">
   <ul id='demo'>
    <li><a href='/'>HOME</a></li>
    <li><a href='/login/'>LOGIN</a></li>
    <li><a href='/reg/'>REGISTER</a></li>
   </ul>
+        <div class="info">
+        <h1> MAKE AND SAVE NOTES!!</h1>
+            <h1>COME BACK TO THEM AGAIN!!</h1>
+            <h1>MAINTAIN AND MANAGE YOUR ACCOUNT</h1>
+        </div>
  </div>
-<div class="stage">
-    {% block body %}
-    {% endblock body %}
+    <div class="gif">
+        <img src="{% static 'gif/ipad_as_book.gif' %}" alt="ipad_as_book">
+    </div>
 </div>
-<p class="footer" >images have been taken from https://google.co.in</p>
+<p class="footer" >images/gif have been taken from https://google.co.in</p>
 </body>
 </html>
