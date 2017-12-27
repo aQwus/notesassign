@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f6d99155-ca1a-4bb0-84a2-6ae3bf0076a7" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/notes/static/gif/ipad_as_book.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/notes/static/images/notebook.png" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/notes/templates/notes/base.html" afterPath="$PROJECT_DIR$/notes/templates/notes/base.html" />
-      <change beforePath="$PROJECT_DIR$/notes/templates/notes/home.html" afterPath="$PROJECT_DIR$/notes/templates/notes/home.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -50,8 +46,8 @@
       <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/notes/templates/notes/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="24" column="29" lean-forward="false" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+            <state relative-caret-position="524">
+              <caret line="40" column="13" lean-forward="false" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -526,8 +522,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/notes/templates/notes/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="24" column="29" lean-forward="false" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+        <state relative-caret-position="524">
+          <caret line="40" column="13" lean-forward="false" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
           <folding />
         </state>
       </provider>
